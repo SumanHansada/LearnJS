@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- <script src="strings.js"></script> -->
+    <script src="condition.js"></script>
+    <!-- <script type="text/javascript">
+        function addNumbers() {
+            var fNum = document.getElementById('num1').value;   // .value returns string
+            var sNum = document.getElementById('num2').value;   // .value returns string            
+            //function parseInt(s: string, radix?: number): number
+            //s: string is required and radix?: number (number system base 2 to base 36) 
+            //s: string should be in that number system. By default it is 10
+            //function parseFloat(string: string): number
+            if(fNum == "")
+            {
+                alert("First number is required");
+                return;
+            }
+            fNum = parseFloat(fNum);
+            if(isNaN(fNum))
+            {
+                alert("Please enter a valid first number");
+                return;
+            }
+            if(sNum == "")
+            {
+                alert("Second number is required");
+                return;
+            }            
+            sNum = parseFloat(sNum);
+            if(isNaN(sNum))
+            {
+                alert("Please enter a valid second number");
+                return;                
+            }
+            document.getElementById('res').value = fNum + sNum;
+        }
+    </script> -->
+    <!-- <script type="text/javascript">
+    function getEmailAndDomainParts() {
+        var emailAddress = document.getElementById('emailID').value;        
+        var emailPart = emailAddress.substring(0, emailAddress.indexOf('@'));
+        var domainPart = emailAddress.substring(emailAddress.indexOf('@') + 1);
+
+        document.getElementById('emailPart').value = emailPart;
+        document.getElementById('domainPart').value = domainPart;
+    }
+
+    function getTopLevelDomain() {
+        var url = document.getElementById('websiteURL').value;
+        var domainName = url.substring(url.lastIndexOf('.'));
+
+        document.getElementById('topLevelDomain').value = domainName;
+    }
+    </script> -->
+</head>
+<body>
+    <!-- <form id="form1">
+        <table style="border:1px solid black">
+            <tr>
+                <td>First Number</td>
+                <td><input id="num1" type="text"></td>
+            </tr>
+            <tr>
+                <td>Second Number</td>
+                <td><input id="num2" type="text"></td>
+            </tr>
+            <tr>
+                <td>Result Number</td>
+                <td><input id="res" type="number"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="button" onclick="addNumbers()">Add</button></td>
+            </tr>
+        </table>
+    </form> -->
+    <!-- <form id="form2">
+        <table style="border: 1px solid black">
+            <tr>
+                <td>Email Address</td>
+                <td><input id="emailID" type="text"></td>
+            </tr>
+            <tr>
+                <td>Email Part</td>
+                <td><input id="emailPart" type="text"></td>
+            </tr>
+            <tr>
+                <td>Domain Part</td>
+                <td><input id="domainPart" type="text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="button" onclick="getEmailAndDomainParts()">Get Email & Domain Parts</button></td>
+            </tr>
+
+        </table>
+        <br>
+        <table style="border: 1px solid black">
+            <tr>
+                <td>Website URL</td>
+                <td><input id="websiteURL" type="text"></td>
+            </tr>
+            <tr>
+                <td>Top Level Domain</td>
+                <td><input id="topLevelDomain" type="text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="button" onclick="getTopLevelDomain()">Get Top Level Domain</button></td>
+            </tr>
+        </table>
+    </form> -->
+</body>
+</html>
